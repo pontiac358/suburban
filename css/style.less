@@ -111,6 +111,7 @@ img {
   .flex;
   .flex_center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button_green {
@@ -699,8 +700,8 @@ flex-wrap: wrap;
   position: absolute;
   right: 0;
   bottom: 0;
- right: 33px;
- bottom: 26px;
+  right: 33px;
+  bottom: 26px;
 }
 
 .attach__label {
@@ -731,18 +732,19 @@ flex-wrap: wrap;
 .text-input_type-1{
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 54px;
-}
-
-.text-input_small::placeholder {
-  color: #A0A0A0;
+  &::placeholder {
+    color: #A0A0A0;
+  }
 }
 
 .text-input_type-2 {
   background-color: inherit;
   font-size: 36px;
   line-height: 42px;
-  color: #353535;
+  color: #fff;
   border-color: #FFFFFF;
   padding-bottom: 13px;
+  &::placeholder {
+    color: #353535;
+  }
 }
