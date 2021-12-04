@@ -1,4 +1,5 @@
 @import "helper";
+@import "../fonts/stylesheet.css";
 
 /* Eric Meyer's CSS Reset */
 html, body, div, span, applet, object, iframe,
@@ -47,7 +48,7 @@ table {
 /* End of Eric Meyer's CSS Reset */
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
@@ -82,7 +83,8 @@ input {
 }
 
 body{
-  font-family: 'Greycliff CF Demi', sans-serif;
+  font-family: 'TT Hoves';
+  height: 100%;
 }
 
 a{
@@ -162,6 +164,35 @@ img {
   padding: 0 85px;
 }
 
+.main-content{
+  height: 100%;
+  &.main-content_light {
+    background: #0C0C0C;
+    .header{
+      .header_light;
+    }
+
+    .footer{
+      .footer_light;
+    }
+  }
+}
+
+.header{
+  position: relative;
+  z-index: 3;
+}
+
+.header_light{
+  .header__logo{
+    color: #fff;
+  }
+
+  .top-menu__link{
+    color: #fff;
+  }
+}
+
 .header__wrap {
   padding: 59px 0;
   .flex;
@@ -200,18 +231,32 @@ flex-wrap: wrap;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-  &_active {
+
+  &.top-menu__link_active {
     color: #48F478;
   }
 }
 
 .main-slide {
   position: relative;
+  margin-top: -198px;
+  &:after{
+    content: "";
+    .fullSize;
+    background: rgba(0, 0, 0, 0.15);
+  }
 }
 
 .main-slide__content {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-slide__img{
+  height: 890px;
+  object-fit: cover;
 }
 
 .main-slide__title {
@@ -252,20 +297,25 @@ flex-wrap: wrap;
 
 .ticker {
   background-color: #000000;
-  height: 49px;
+  width: 100%;
 }
 
 .ticker__link {
+  height: 60px;
   font-size: 42px;
   line-height: 49px;
   text-decoration-line: underline;
   color: #FFFFFF;
   display: block;
+  .flex;
+  .flex_ac;
 }
 
 .brif-action {
   background-color: #48F478;
-  padding: 65px 0 80px;
+  height: 223px;
+  .flex;
+  .flex_ac;
 }
 
 .brif-action__link {
@@ -274,9 +324,16 @@ flex-wrap: wrap;
   text-decoration-line: underline;
 }
 
+.brif-wrap{
+  margin-bottom: 90px;
+}
 
 
-
+.footer_light {
+  .footer__copyright{
+    color: #fff;
+  }
+}
 
 
 .footer__wrap {
@@ -298,6 +355,11 @@ flex-wrap: wrap;
 }
 .social__item {
   margin-left: 75px;
+  width: 18px;
+  .flex_no-shrink;
+}
+.social__img{
+  width: auto;
 }
 
 
@@ -341,12 +403,12 @@ flex-wrap: wrap;
 }
 
 .gallery-inner__img {
-  width: 434px;
-  height: 434px; 
 }
 
 
-
+.gallery-inner__item{
+  width: 24.7%;
+}
 
 
 
@@ -370,7 +432,9 @@ flex-wrap: wrap;
 }
 
 
-
+.office{
+  margin-bottom: 82px;
+}
 
 .office__title {
   font-weight: 600;
@@ -406,20 +470,22 @@ flex-wrap: wrap;
 
 
 .live__title {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
+  color: #fff;
 }
 
 .live__list {
+  margin-bottom: 166px;
+
   .flex;
   flex-wrap: wrap;
-  gap: 114px 38px;
+  gap: 114px 3%;
 }
 
 .live__item {
-  width: 320px;
-  height: 320px;
   background-color: #333;
   border-radius: 50%;
+  width: 22.7%;
 }
 
 .live__img {
@@ -442,13 +508,21 @@ flex-wrap: wrap;
 .team__list {
   .flex;
   flex-wrap: wrap;
-  gap: 77px 124px;
+  gap: 77px 7%;
+  margin-bottom: 110px;
+}
+
+.team__item {
+  width: 28.6%;
+}
+
+.team__img{
+  width: 100%;
 }
 
 .team__avatar {
   margin-bottom: 28px;
-  width: 500px;
-  height: 500px;
+  width: 100%;
   background-color: #C4C4C4;
 }
 
@@ -485,7 +559,10 @@ flex-wrap: wrap;
   grid-area: big; 
 }
 
-
+.main-galletry__img{
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -538,11 +615,12 @@ flex-wrap: wrap;
 .schedule-wrap {
   background-color: #0C0C0C;
   border-bottom: 2px solid #FFFFFF;
+
 }
 
 .schedule {
   margin: 102px auto 166px;
-  width: 1117px;
+  max-width: 1117px;
   border: 2px solid #FFFFFF;
   padding: 62px 66px;
 }
@@ -560,7 +638,7 @@ flex-wrap: wrap;
 }
 
 .schedule__elem {
-  width: 438px;
+  width: 45%;
 }
 
 
@@ -570,7 +648,7 @@ flex-wrap: wrap;
 
 
 .form__fieldset {
-  width: 875px;
+  max-width: 875px;
 }
 
 .form__title {
