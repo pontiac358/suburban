@@ -33,11 +33,11 @@ $(function(){
         });
     }
 
-    /*if($("#eocjsNewsticker").length){
+    if($("#eocjsNewsticker").length){
         $("#eocjsNewsticker").eocjsNewsticker({
             // options here
         });
-    }*/
+    }
 })
 
 
