@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/less" href="css/style.less" />
   <script src="js/less.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery-bundle.min.css" integrity="sha512-fqfjVCJd1qT62UGUU3+8ByzjvSv6O9vM1muZ/cH5KrX6OqaUe2OTYjmT3R8pp6qYmh4Nv2l5I8WohRwDNzdriw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
 
@@ -84,13 +85,16 @@
             </a>
           </div>
         </div>
-        <div class="gallery__inner-wrap">
-          <div class="gallery-inner__item">
-            <img class="gallery-inner__img" src="img/gallery/image-5.png" alt="">
-          </div>
-          <div class="gallery-inner__item">
+        <div class="gallery__inner-wrap" id="lightgallery">
+          <a class="gallery-inner__item" data-src="img/gallery/image-5.png">
+              <img class="gallery-inner__img" src="img/gallery/image-5.png" alt="">
+
+
+
+          </a>
+          <a class="gallery-inner__item" data-pinterest-text="<div>wedew</div>">
             <img class="gallery-inner__img" src="img/gallery/image-8.png" alt="">
-          </div>
+          </a>
           <div class="gallery-inner__item">
             <img class="gallery-inner__img" src="img/gallery/image-9.png" alt="">
           </div>
@@ -153,5 +157,8 @@
     </footer>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js" integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

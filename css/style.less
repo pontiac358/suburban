@@ -407,7 +407,7 @@ flex-wrap: wrap;
 
 
 .gallery-inner__item{
-  width: 24.7%;
+  width: calc(25% - 4px);
 }
 
 
@@ -486,6 +486,9 @@ flex-wrap: wrap;
   background-color: #333;
   border-radius: 50%;
   width: 22.7%;
+  .card {
+    display: none;
+  }
 }
 
 .live__img {
@@ -584,6 +587,9 @@ flex-wrap: wrap;
   bottom: 0;
   color: #fff;
   background: linear-gradient(360deg, #000000 42.18%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  text-align: left;
+  white-space: normal;
 }
 
 .card__meta {
