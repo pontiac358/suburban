@@ -131,13 +131,13 @@
               <div class="textarea">
                 <textarea class="textarea__input" name="message" id="" placeholder="Опишите свою задачу"></textarea>
                 <div class="attach">
-                  <input class="attach__input visually-hidden" type="file" name="file" id="attach__label">
-                  <label class="attach__label" for="attach__label">
-              <span class="attach__icon-wrapper">
-                <img class="input__icon" src="img/icon/attach_file.svg" width="10" height="21" alt="Выбрать файл">
-              </span>
-                    <span class="attach__text">прикрепить файл</span>
+                  <label class="attach__label" for="file-upload">
+                    <span class="attach__icon-wrapper">
+                      <img class="input__icon" src="img/icon/attach_file.svg" width="10" height="21" alt="Выбрать файл">
+                    </span>
+                    <span class="attach__text" class="file-name">прикрепить файл</span>
                   </label>
+                  <input  class="attach__input visually-hidden" type="file" name="file" id="file-upload">
                 </div>
               </div>
             </fieldset>
@@ -201,5 +201,10 @@
     </footer>
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js" integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/smooth-eocjs-news-ticker/eocjs-newsticker.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

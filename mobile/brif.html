@@ -111,34 +111,34 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset_budget">
               <legend class="form__title form__title_product">Бюджет</legend>
-              <div class="form__row form-range">
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="don't-know" id="toggle-1">
-                  <label class="form__label form__label_radio" for="toggle-1">Не знаю</label>
+              <div class="form__row">
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio1">
+                  <label class="form__label form__label_ckeckbox" for="radio1">Не знаю</label>
                 </div>
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="50000" id="toggle-2">
-                  <label class="form__label form__label_radio" for="toggle-2">50 000 ₽</label>
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio2">
+                  <label class="form__label form__label_ckeckbox" for="radio2">50 000 ₽</label>
                 </div>
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="100000" id="toggle-3">
-                  <label class="form__label form__label_radio" for="toggle-3">100 000 ₽</label>
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio3">
+                  <label class="form__label form__label_ckeckbox" for="radio3">100 000 ₽</label>
                 </div>
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="300000" id="toggle-4" checked="">
-                  <label class="form__label form__label_radio" for="toggle-4">300 000 ₽</label>
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio4">
+                  <label class="form__label form__label_ckeckbox" for="radio4">300 000 ₽</label>
                 </div>
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="50000" id="toggle-5">
-                  <label class="form__label form__label_radio" for="toggle-5">500 000 ₽</label>
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio5">
+                  <label class="form__label form__label_ckeckbox" for="radio5">500 000 ₽</label>
                 </div>
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="50000" id="toggle-6">
-                  <label class="form__label form__label_radio" for="toggle-6">700 000 ₽</label>
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio6">
+                  <label class="form__label form__label_ckeckbox" for="radio6">700 000 ₽</label>
                 </div>
-                <div class="form-range__toggle">
-                  <input class="form__input form__input_radio visually-hidden" type="radio" name="budget" value="50000" id="toggle-7">
-                  <label class="form__label form__label_radio" for="toggle-7">1 000 000 ₽</label>
+                <div class="form__input-btn">
+                  <input class="form__input form__input_checkbox visually-hidden" type="radio" name="fff" id="radio7">
+                  <label class="form__label form__label_ckeckbox" for="radio7">1 000 000 ₽</label>
                 </div>
               </div></fieldset>
             <fieldset class="form__fieldset form__fieldset_message">
@@ -146,13 +146,13 @@
               <div class="textarea">
                 <textarea class="textarea__input" name="message" id="" placeholder="Опишите свою задачу"></textarea>
                 <div class="attach">
-                  <input class="attach__input visually-hidden" type="file" name="file" id="attach__label">
-                  <label class="attach__label" for="attach__label">
+                  <label class="attach__label" for="file-upload">
               <span class="attach__icon-wrapper">
                 <img class="input__icon" src="img/icon/attach_file.svg" width="10" height="21" alt="Выбрать файл">
               </span>
-                    <span class="attach__text">прикрепить файл</span>
+                    <span class="attach__text" class="file-name">прикрепить файл</span>
                   </label>
+                  <input  class="attach__input visually-hidden" type="file" name="file" id="file-upload">
                 </div>
               </div>
             </fieldset>
@@ -214,5 +214,10 @@
   </footer>
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js" integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/smooth-eocjs-news-ticker/eocjs-newsticker.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

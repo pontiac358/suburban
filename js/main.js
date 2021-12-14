@@ -33,11 +33,24 @@ $(function(){
         });
     }
 
-    /*if($("#eocjsNewsticker").length){
-        $("#eocjsNewsticker").eocjsNewsticker({
-            // options here
-        });
-    }*/
+
+
+    $("#file-upload").change(function(){
+        console.log('eferfrfrfr')
+
+        $(".attach__text").text(this.files[0].name);
+    });
+
+    if($("#eocjsNewsticker").length){
+        setTimeout(function (){
+            $("#eocjsNewsticker").eocjsNewsticker({
+                speed: 20,
+                timeout: 1,
+                divider:'+++',
+                type:'static'
+            });
+        }, 300)
+    }
 })
 
 

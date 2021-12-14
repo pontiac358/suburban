@@ -1,4 +1,17 @@
 $(function(){
+    $(".js-top-menu__open").on('click',function(){
+        $('.top-menu').addClass('top-menu_open')
+    });
+
+    $(".js-top-menu__close").on('click', function(){
+        $('.top-menu').removeClass('top-menu_open')
+    });
+
+
+    $("#file-upload").change(function(){
+        $(".attach__text").text(this.files[0].name);
+    });
+
     let lg = document.getElementById('lightgallery');
     if (lg){
         lightGallery(lg, {
